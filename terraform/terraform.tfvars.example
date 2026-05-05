@@ -1,0 +1,11 @@
+# Example configuration - rename this file to terraform.tfvars and fill in your values
+# DO NOT commit your real terraform.tfvars to GitHub
+
+# The password for the RDS MySQL database
+db_password = "your_secure_password_here"
+
+# The URL of your public GitHub repository
+github_repo = "https://github.com/your_username/your_repo.git"
+
+# The AWS region where resources will be deployed
+region = "us-east-1"
