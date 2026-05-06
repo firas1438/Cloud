@@ -2,6 +2,9 @@
 
 This project demonstrates a highly available, 3-tier web application deployed on AWS using **Terraform (Infrastructure as Code)**.
 
+## AWS VPC Architecture
+![VPC Architecture](https://i.imgur.com/8bc933d.png)
+
 ## Infrastructure Specifications
 This implementation strictly follows all project guidelines and academic requirements:
 
@@ -24,10 +27,11 @@ This implementation strictly follows all project guidelines and academic require
   - **Database**: Port 3306 restricted *only* to the Backend Security Group.
 
 ## Tech Stack
+- **Cloud Provider**: AWS (EC2, VPC, RDS, ALB, ASG)
+- **IaC**: Terraform
 - **Frontend**: Angular 19 (Served by Nginx)
 - **Backend**: Node.js / Express.js
 - **Database**: MySQL (Amazon RDS)
-- **IaC**: Terraform
 
 ## Deployment Instructions
 1. **Configure**: Create `terraform/terraform.tfvars` with your `db_password` and `github_repo`.
