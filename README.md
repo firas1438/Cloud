@@ -2,11 +2,8 @@
 
 This project demonstrates a highly available, 3-tier web application deployed on AWS using **Terraform (Infrastructure as Code)**.
 
-## AWS VPC Architecture
-![VPC Architecture](https://i.imgur.com/8bc933d.png)
-
 ## Infrastructure Specifications
-This implementation strictly follows all project guidelines and academic requirements:
+This implementation strictly follows all project guidelines and requirements:
 
 - **Networking**:
   - Custom **VPC** (CIDR `10.0.0.0/16`) with an Internet Gateway and NAT Gateway.
@@ -25,6 +22,9 @@ This implementation strictly follows all project guidelines and academic require
   - **ALB/Frontend**: Port 80 open to the world (`0.0.0.0/0`).
   - **Backend**: Port 3000 restricted *only* to the ALB Security Group.
   - **Database**: Port 3306 restricted *only* to the Backend Security Group.
+
+## AWS VPC Architecture
+![VPC Architecture](https://i.imgur.com/4Cke6dQ.png)
 
 ## Tech Stack
 - **Cloud Provider**: AWS (EC2, VPC, RDS, ALB, ASG)
